@@ -5,8 +5,12 @@
  * 2. Write a loop that logs out each hobby
  * 3. After the loop, log out the total number of
  *    hobbies
- */
+ */ let hobbies = [ 'art', 'games', 'coding' ];
+or let hobbies = [];
 
+hobbies.push = [ 'art', 'games', 'coding' ];
+
+console.log (hobbies.length);
 
 // Example output
 // 1. swimming
