@@ -5,13 +5,13 @@
  * 2. Write a loop that logs out each hobby
  * 3. After the loop, log out the total number of
  *    hobbies
- */ let hobbies = [ 'art', 'games', 'coding' ];
-or let hobbies = [];
+ */ 
+let hobbies = [ 'art', 'games', 'coding' ];
 
-hobbies.push = [ 'art', 'games', 'coding' ];
-
-console.log (hobbies.length);
-
+for( let i=0; i<hobbies.length; i++ ){
+     console.log( hobbies[i] );
+}
+console.log( 'Total hobbies ', + hobbies.length);
 // Example output
 // 1. swimming
 // 2. board games
@@ -28,7 +28,26 @@ console.log (hobbies.length);
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
+let colors = [ 'red', 'blue', 'teal', 'green', 'teal' ]
+console.log( colors );
+let tealCount = 0; 
+for( let i=0; i<colors.length; i++ ){
+     if( colors[i] === 'teal' ){
+         tealCount++;
+     }
+}
+console.log( ' Teal was found', + tealCount );
 
+/// example 
+var v = [1, 3, 5, 4, 3, 0, 0, 1, 1];    
+    var count = 0;
+
+        for (var i = 0; i < v.length; i++){
+            if(v[i] === 1){
+                count++;
+            }
+        }
+          console.log (count);
 
 // Example output
 // green, red, teal, orange, teal
@@ -44,8 +63,23 @@ console.log (hobbies.length);
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
+let numbers = [3, 7, 2, 8, 11, 4, 2]
+console.log( numbers );
+oddNumbers = [];
+evenNumbers = [];
 
+for(let i = 0; i < numbers.length; i++) {
+     if (numbers[i] % 2 == 0)
+     evenNumbers.push(numbers[i]);
+}
+console.log(`Even: ${evenNumbers}`);
 
+for(let i = 0; i < numbers.length; i++) {
+     if (numbers[i] % 2 !== 0)
+          oddNumbers.push(numbers[i]);
+     }
+      
+console.log(`Odd: ${oddNumbers}`);
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
 // Odd 3, 7, 11
@@ -61,7 +95,14 @@ console.log (hobbies.length);
  * 4. Output both arrays
  */
 
-
+/// Really confused on boolean arrays????
+const boolArray = [true, false, true, true];
+myArray = [];
+for (let i = 0; i < myArray.length; i++){
+     if (boolArray[i] % 2 == 0) 
+          myArray.push(boolArray[i]);
+}
+console.log(`My Array: ${myArray}`);
 // Example output
 // true, false, true, true
 // Toggled false, true, false, false
